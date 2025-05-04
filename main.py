@@ -1,5 +1,3 @@
-# main.py
-
 import openpyxl
 from datetime import date
 from assign import process_row
@@ -23,8 +21,9 @@ def main():
     result_wb    = openpyxl.Workbook()
     result_sheet = result_wb.active
     result_sheet.title = "התחייבות"
-    headers = ["emp_id", "שם מלא", "תחייבות"]
+    headers = ["emp_id", "שם מלא", "התחייבות"]
     write_headers(result_sheet, headers, start_row=1, start_col=1)
+
 
     # 4. עיבוד כל שורה בגליון data
     results = []

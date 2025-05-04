@@ -1,5 +1,3 @@
-# age_calculations.py
-
 from datetime import date, datetime
 
 def get_age(birthdate, reference_date=None):

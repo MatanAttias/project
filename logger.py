@@ -1,5 +1,3 @@
-# logger.py
-
 import openpyxl
 
 def write_headers(sheet, headers, start_row=1, start_col=1):

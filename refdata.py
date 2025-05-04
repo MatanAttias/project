@@ -1,5 +1,3 @@
-# refdata.py
-
 import openpyxl
 from datetime import date
 
@@ -65,7 +63,7 @@ def load_mortality(path="תמותה.xlsx"):
         age_map = {}
         for row in sheet.iter_rows(min_row=3, values_only=True):
             age = row[1]
-            q_x  = row[5]
+            q_x = row[5]
             if age is None:
                 continue
             age_map[int(age)] = q_x

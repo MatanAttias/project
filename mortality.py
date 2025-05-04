@@ -1,4 +1,3 @@
-# mortality.py
 
 def mortality_rate(gender_type, current_age, mortality_map):
     """
